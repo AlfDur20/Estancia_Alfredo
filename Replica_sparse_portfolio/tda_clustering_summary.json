@@ -1,0 +1,28 @@
+{
+  "n_clusters": 11,
+  "n_assets": 50,
+  "distance_type": "WD",
+  "exemplars": [
+    "ISRG",
+    "ARE",
+    "IPG",
+    "DHR",
+    "SW",
+    "RTX",
+    "REG",
+    "CAT",
+    "JNJ",
+    "WRB",
+    "HSY"
+  ],
+  "window_start": "2015-01-02 00:00:00",
+  "window_end": "2015-07-02 00:00:00",
+  "parameters": {
+    "T": 126,
+    "T_oos": 21,
+    "d": 3,
+    "tau": 1,
+    "p_wasserstein": 2,
+    "homology_dim": 1
+  }
+}

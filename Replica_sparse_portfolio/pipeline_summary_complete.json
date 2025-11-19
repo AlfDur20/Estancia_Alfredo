@@ -1,0 +1,39 @@
+{
+  "pipeline_parameters": {
+    "T": 126,
+    "T_oos": 21,
+    "d": 3,
+    "tau": 1,
+    "p_wasserstein": 2,
+    "m_local_scaling": 7,
+    "distance_type": "WD",
+    "preference": 0.10166234265741698,
+    "n_clusters": 8
+  },
+  "exemplars": [
+    "ARE",
+    "TECH",
+    "ETR",
+    "SW",
+    "CFG",
+    "FICO",
+    "CAT",
+    "GLW"
+  ],
+  "strategies": {
+    "s1_n_assets": 14,
+    "s1_sharpe": 0.3428455234390998,
+    "s2a_n_assets": 7,
+    "s2a_sharpe": 2.745973388957671,
+    "s2b_n_assets": 2,
+    "s2b_sharpe": 2.492303702628542
+  },
+  "in_sample_period": {
+    "start": "2015-01-02 00:00:00",
+    "end": "2015-07-02 00:00:00"
+  },
+  "oos_period": {
+    "start": "2015-07-07 00:00:00",
+    "end": "2015-08-03 00:00:00"
+  }
+}

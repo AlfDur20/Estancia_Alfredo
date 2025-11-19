@@ -1,0 +1,51 @@
+ticker,cluster,is_exemplar,sector
+ISRG,0,True,Healthcare
+AMZN,4,False,Consumer Cyclical
+ARE,1,True,Real Estate
+IPG,2,True,Communication Services
+DHR,3,True,Healthcare
+HOLX,4,False,Healthcare
+NTAP,10,False,Technology
+HUM,4,False,Healthcare
+XOM,7,False,Energy
+CCI,7,False,Real Estate
+WY,2,False,Real Estate
+TECH,10,False,Healthcare
+CBRE,4,False,Real Estate
+STX,2,False,Technology
+MHK,4,False,Consumer Cyclical
+MCK,4,False,Healthcare
+C,2,False,Financial Services
+CMI,6,False,Industrials
+ETR,10,False,Utilities
+A,6,False,Healthcare
+SW,4,True,Consumer Cyclical
+CFG,10,False,Financial Services
+RTX,5,True,Industrials
+REG,6,True,Real Estate
+TYL,4,False,Technology
+NOW,7,False,Technology
+FICO,4,False,Technology
+FRT,2,False,Real Estate
+AKAM,10,False,Technology
+ADP,2,False,Technology
+URI,2,False,Industrials
+WMB,4,False,Energy
+CAT,7,True,Industrials
+JNJ,8,True,Healthcare
+MPC,10,False,Energy
+TPR,10,False,Consumer Cyclical
+BF-B,10,False,Consumer Defensive
+CMCSA,7,False,Communication Services
+ROL,4,False,Consumer Cyclical
+CDNS,2,False,Technology
+OXY,6,False,Energy
+WRB,9,True,Financial Services
+HSY,10,True,Consumer Defensive
+FIS,7,False,Technology
+GLW,4,False,Technology
+CAH,2,False,Healthcare
+EOG,2,False,Energy
+CCL,7,False,Consumer Cyclical
+DLR,7,False,Real Estate
+DTE,10,False,Utilities
