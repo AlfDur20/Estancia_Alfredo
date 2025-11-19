@@ -35,7 +35,7 @@ CAT,Industrials,Farm & Heavy Construction Machinery,145941203673.25586,United St
 MU,Technology,Semiconductors,93538291467.66112,United States,"Micron Technology, Inc.",0.46,2.569,2.609,1.552,260.58,61.54,1.4756985,buy,1.58974,214.30556,325.0,107.0
 MS,Financial Services,Capital Markets,143650797439.18555,United States,Morgan Stanley,0.191,0.489,0.446,1.217,171.77,94.33,0.20576227,none,,168.15,186.0,125.0
 PM,Consumer Defensive,Tobacco,135558263297.15137,United States,Philip Morris International Inc.,0.094,0.131,0.128,0.444,186.69,116.12,0.17924964,buy,1.72222,183.25,220.0,158.0
-TMUS,Communication Services,Telecom Services,180807184746.09372,United States,"T-Mobile US, Inc.",0.089,-0.077,-0.113,0.435,276.49,199.41,-0.074442565,buy,1.86207,275.0,310.0,200.0
+TMUS,Communication Services,Telecom Services,180807184746.0937,United States,"T-Mobile US, Inc.",0.089,-0.077,-0.113,0.435,276.49,199.41,-0.074442565,buy,1.86207,275.0,310.0,200.0
 MRK,Healthcare,Drug Manufacturers - General,261390518005.8203,United States,"Merck & Co., Inc.",0.037,0.87,0.832,0.319,105.07,73.31,-0.0381189,buy,2.0,102.46269,138.0,82.0
 RTX,Industrials,Aerospace & Defense,234635100160.0,United States,RTX Corporation,0.119,0.294,0.303,0.431,181.31,112.27,0.47637856,buy,1.89474,192.05556,217.0,150.0
 GS,Financial Services,Capital Markets,120968981291.01562,United States,"The Goldman Sachs Group, Inc.",0.207,0.458,0.371,1.35,841.28,439.38,0.33399844,hold,2.52,802.5263,898.0,630.0
@@ -282,7 +282,7 @@ EL,Consumer Defensive,Household & Personal Products,50499515450.08447,United Sta
 VRSK,Industrials,Consulting Services,34467449501.92139,United States,"Verisk Analytics, Inc.",0.059,0.045,0.025,0.817,322.92,197.0,-0.22205651,buy,2.36842,251.29411,300.0,195.0
 RJF,Financial Services,Asset Management,22711195139.161865,United States,"Raymond James Financial, Inc.",0.074,0.034,0.003,1.006,177.66,117.57,-0.044766963,buy,2.5,184.5,200.0,171.0
 WTW,Financial Services,Insurance Brokers,24392994338.378902,United Kingdom,Willis Towers Watson Public Limited Company,-0.0,,,0.636,352.79,292.97,0.035794377,buy,1.95,367.27777,400.0,325.0
-LYV,Communication Services,Entertainment,21558418899.751957,United States,"Live Nation Entertainment, Inc.",0.111,-0.561,-0.045,1.21,175.25,112.88,-0.015025318,buy,1.57143,170.2,190.0,135.0
+LYV,Communication Services,Entertainment,21558418899.75196,United States,"Live Nation Entertainment, Inc.",0.111,-0.561,-0.045,1.21,175.25,112.88,-0.015025318,buy,1.57143,170.2,190.0,135.0
 EXPE,Consumer Cyclical,Travel Services,20941878414.0625,United States,"Expedia Group, Inc.",0.087,0.454,0.402,1.457,279.61,130.01,0.37896752,buy,2.27027,270.0909,350.0,180.0
 KEYS,Technology,Scientific & Technical Instruments,27847907136.246094,United States,"Keysight Technologies, Inc.",0.111,-0.505,-0.509,1.203,187.67,121.43,0.15368438,buy,1.78571,195.92857,220.0,157.0
 WRB,Financial Services,Insurance - Property & Casualty,11790502161.22705,United States,W. R. Berkley Corporation,0.108,0.407,0.398,0.381,78.48,55.97,0.28094363,hold,2.76471,74.2,88.0,56.0
@@ -301,7 +301,7 @@ ATO,Utilities,Utilities - Regulated Gas,16750507422.821045,United States,Atmos E
 TSCO,Consumer Cyclical,Specialty Retail,4517300144.416809,United States,Tractor Supply Company,0.072,0.088,0.074,0.72,63.99,46.85,-0.01630932,buy,2.0,63.51852,70.0,48.0
 ROL,Consumer Cyclical,Personal Services,20608906755.78711,United States,"Rollins, Inc.",0.12,0.205,0.194,0.791,60.35,45.34,0.17067254,buy,2.06667,61.60769,72.0,46.0
 MTB,Financial Services,Banks - Regional,21547997622.070312,United States,M&T Bank Corporation,0.08,0.199,0.098,0.607,225.7,150.75,-0.15277714,buy,2.04762,217.92857,251.0,185.0
-ES,Utilities,Utilities - Regulated Electric,19847043736.558598,United States,Eversource Energy,0.051,,,0.759,75.25,52.28,0.20042157,buy,2.44444,75.6,87.0,60.0
+ES,Utilities,Utilities - Regulated Electric,19847043736.5586,United States,Eversource Energy,0.051,,,0.759,75.25,52.28,0.20042157,buy,2.44444,75.6,87.0,60.0
 IBKR,Financial Services,Capital Markets,106569080832.0,United States,"Interactive Brokers Group, Inc.",0.232,0.405,0.429,1.25,73.35,32.82,0.36725783,buy,1.81818,76.81818,93.0,52.0
 BRO,Financial Services,Insurance Brokers,19988507325.92578,United States,"Brown & Brown, Inc.",0.342,-0.161,-0.03,0.816,125.68,76.17,-0.26191127,hold,2.57143,95.0,114.0,79.0
 EXR,Real Estate,REIT - Industrial,32533330777.34375,United States,Extra Space Storage Inc.,0.034,-0.142,-0.141,1.27,175.58,121.03,-0.21122593,buy,2.33333,156.2,178.0,144.0
@@ -313,7 +313,7 @@ FITB,Financial Services,Banks - Regional,22025342835.23657,United States,Fifth T
 EME,Industrials,Engineering & Construction,10087115158.062744,United States,"EMCOR Group, Inc.",0.164,0.133,0.093,1.159,778.64,320.89,0.18949413,buy,1.66667,758.5,900.0,675.0
 CBOE,Financial Services,Financial Data & Stock Exchanges,18516808888.305664,United States,"Cboe Global Markets, Inc.",0.081,0.377,0.377,0.357,262.98,187.3,0.25802517,hold,3.11111,256.66666,291.0,220.0
 PPL,Utilities,Utilities - Regulated Electric,18843388011.76733,United States,PPL Corporation,0.084,0.489,0.486,0.704,38.27,31.22,0.07791448,buy,1.8125,40.6,44.0,34.0
-FE,Utilities,Utilities - Regulated Electric,19346266127.405277,United States,FirstEnergy Corp.,0.112,0.045,0.053,0.652,48.2,37.58,0.1197691,buy,2.3125,50.0,54.0,47.0
+FE,Utilities,Utilities - Regulated Electric,19346266127.40528,United States,FirstEnergy Corp.,0.112,0.045,0.053,0.652,48.2,37.58,0.1197691,buy,2.3125,50.0,54.0,47.0
 FSLR,Technology,Solar,18407084189.575195,United States,"First Solar, Inc.",0.797,0.457,0.457,1.59,281.55,116.56,0.35322368,buy,1.63889,269.63687,335.0,150.0
 BR,Technology,Information Technology Services,23551049518.12744,United States,"Broadridge Financial Solutions, Inc.",0.117,1.059,1.073,0.997,271.91,212.33,-0.00031131506,buy,2.44444,269.375,305.0,240.0
 CNP,Utilities,Utilities - Regulated Electric,17209845204.89502,United States,"CenterPoint Energy, Inc.",0.071,0.506,0.518,0.562,40.5,30.59,0.2796178,buy,2.35294,42.66667,46.0,38.0
@@ -478,7 +478,7 @@ MRNA,Healthcare,Biotechnology,37918692636.41357,United States,"Moderna, Inc.",-0
 SWKS,Technology,Semiconductors,16967234307.615234,United States,"Skyworks Solutions, Inc.",0.073,1.545,1.337,1.296,95.46,47.93,-0.24413598,hold,2.84615,83.63158,140.0,70.0
 CPB,Consumer Defensive,Packaged Foods,11938410107.421877,United States,The Campbell's Company,0.012,,,-0.055,46.95,29.39,-0.2940501,hold,3.04762,34.36842,60.0,29.0
 TAP,Consumer Defensive,Beverages - Brewers,12480462578.7735,United States,Molson Coors Beverage Company,-0.023,,,0.45,64.66,42.94,-0.24967104,hold,2.57143,51.04762,72.0,40.0
-BAX,Healthcare,Medical Instruments & Supplies,18734004656.341557,United States,Baxter International Inc.,0.05,,,0.611,37.74,17.4,-0.45356703,hold,2.82353,24.06667,42.0,19.0
+BAX,Healthcare,Medical Instruments & Supplies,18734004656.34156,United States,Baxter International Inc.,0.05,,,0.611,37.74,17.4,-0.45356703,hold,2.82353,24.06667,42.0,19.0
 IPG,Communication Services,Advertising Agencies,11534912696.502686,United States,"The Interpublic Group of Companies, Inc.",-0.048,5.8,5.179,1.011,33.05,22.51,-0.09508318,buy,2.22222,33.0625,39.0,25.0
 TECH,Healthcare,Biotechnology,12081750473.40393,United States,Bio-Techne Corporation,-0.01,0.143,0.136,1.467,79.28,46.01,-0.11692029,strong_buy,1.46667,69.16667,75.0,60.0
 PAYC,Technology,Software - Application,11774302725.36621,United States,"Paycom Software, Inc.",0.092,0.496,0.51,0.83,267.76,156.5,-0.24354601,buy,2.5,209.9375,250.0,165.0

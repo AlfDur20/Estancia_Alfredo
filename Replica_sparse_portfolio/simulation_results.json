@@ -1,0 +1,32 @@
+{
+  "config": {
+    "initial_investment": 1000000,
+    "strategy": "GMV",
+    "period_start": "2023-12-07",
+    "period_end": "2025-11-18",
+    "trading_days": 489,
+    "years": 1.94
+  },
+  "portfolio": {
+    "final_value": 1119311.1,
+    "total_return_pct": 11.93,
+    "annualized_return_pct": 5.98,
+    "volatility_pct": 15.17,
+    "sharpe_ratio": 0.3942,
+    "max_drawdown_pct": -15.83
+  },
+  "benchmark": {
+    "final_value": 1489003.84,
+    "total_return_pct": 48.9,
+    "annualized_return_pct": 22.77,
+    "volatility_pct": 16.48,
+    "sharpe_ratio": 1.382,
+    "max_drawdown_pct": -18.76
+  },
+  "relative_metrics": {
+    "alpha_pct": -36.97,
+    "tracking_error_pct": 14.02,
+    "correlation": 0.6103,
+    "information_ratio": -2.6371
+  }
+}
