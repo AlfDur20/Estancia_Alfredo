@@ -1,0 +1,147 @@
+# =======================================================
+# 📊 GRÁFICA 2B: NORMALIZADO - PERÍODO DE VALIDACIÓN (INVERSIÓN REAL)
+# =======================================================
+
+print("\n" + "="*80)
+print("📊 GRÁFICA 2B: EVOLUCIÓN NORMALIZADA - PERÍODO DE VALIDACIÓN (Base = 1)")
+print("📍 ESTE ES EL PERÍODO DE INVERSIÓN REAL (LO QUE MÁS IMPORTA)")
+print("="*80)
+
+# Obtener datos de validación
+validation_tickers = [t for t in portfolio_weights.keys() if t in validation_data.columns]
+prices_validation = validation_data[validation_tickers].copy()
+
+fig = plt.figure(figsize=(20, 10))
+ax = plt.subplot(1, 1, 1)
+
+# Normalizar cada ticker en validación
+prices_val_normalized = prices_validation / prices_validation.iloc[0]
+
+# Graficar cada ticker normalizado
+for ticker in validation_tickers:
+    ax.plot(prices_val_normalized.index, prices_val_normalized[ticker], 
+            alpha=0.5, linewidth=1, label=ticker if len(validation_tickers) <= 20 else '')
+
+# SPY normalizado en validación
+spy_val_normalized = SPY_validation['SPY'] / SPY_validation['SPY'].iloc[0]
+ax.plot(spy_val_normalized.index, spy_val_normalized, 
+        linewidth=3, color='red', linestyle='--', label='SPY', alpha=0.8)
+
+# Portafolio equal weight
+portfolio_val_equal = prices_val_normalized.mean(axis=1)
+ax.plot(prices_val_normalized.index, portfolio_val_equal, 
+        linewidth=3, color='blue', linestyle=':', label='Portfolio (Equal Weight)', alpha=0.8)
+
+# Portafolio TDA con pesos ajustados - CORREGIDO
+adjusted_weights = {t: portfolio_weights[t] for t in validation_tickers}
+total_weight = sum(adjusted_weights.values())
+adjusted_weights = {t: w/total_weight for t, w in adjusted_weights.items()}
+
+weights_val_array = np.array([adjusted_weights[ticker] for ticker in validation_tickers])
+portfolio_val_tda = (prices_val_normalized[validation_tickers].values * weights_val_array).sum(axis=1)
+ax.plot(prices_val_normalized.index, portfolio_val_tda, 
+        linewidth=3, color='black', label='TDA Portfolio (Weighted)', alpha=0.9)
+
+ax.axhline(y=1.0, color='gray', linestyle=':', linewidth=1, alpha=0.5)
+ax.set_title('⭐ Período de VALIDACIÓN (Inversión Real): Evolución Normalizada (Base = 1) ⭐', 
+             fontsize=14, fontweight='bold', pad=20)
+ax.set_xlabel('Fecha', fontsize=12)
+ax.set_ylabel('Valor Normalizado (Base = 1)', fontsize=12)
+ax.grid(True, alpha=0.3)
+
+if len(validation_tickers) <= 20:
+    ax.legend(loc='upper left', fontsize=8, ncol=3)
+else:
+    ax.plot([], [], alpha=0.5, linewidth=1, color='gray', label=f'{len(validation_tickers)} tickers individuales')
+    ax.legend(loc='upper left', fontsize=10)
+
+plt.tight_layout()
+plt.show()
+
+print(f"✅ Gráfica 2B generada: Período de validación - {len(validation_tickers)} tickers (base = 1)")
+print("="*80)
+
+---
+
+# =======================================================
+# 📊 GRÁFICA 3A: EVOLUCIÓN INDIVIDUAL DE CADA TICKER - ANÁLISIS
+# =======================================================
+
+print("\n" + "="*80)
+print("📊 GRÁFICA 3A: EVOLUCIÓN INDIVIDUAL DE CADA TICKER (Período de Análisis)")
+print("="*80)
+
+fig = plt.figure(figsize=(20, 10))
+ax = plt.subplot(1, 1, 1)
+
+# Graficar cada ticker normalizado SIN multiplicar por peso
+for ticker in portfolio_tickers_list:
+    ticker_normalized = prices_data[ticker] / prices_data[ticker].iloc[0]
+    ticker_weight = portfolio_weights[ticker]
+    
+    ax.plot(prices_data.index, ticker_normalized, 
+             alpha=0.6, linewidth=1.5, 
+             label=f"{ticker} ({ticker_weight*100:.2f}%)" if len(portfolio_tickers_list) <= 15 else '')
+
+ax.axhline(y=1.0, color='gray', linestyle=':', linewidth=1, alpha=0.5)
+ax.set_title('Evolución Individual de Cada Ticker (Base = 1) - Período de Análisis', 
+              fontsize=14, fontweight='bold', pad=15)
+ax.set_xlabel('Fecha', fontsize=11)
+ax.set_ylabel('Valor Normalizado (Base = 1)', fontsize=11)
+ax.grid(True, alpha=0.3)
+
+if len(portfolio_tickers_list) <= 15:
+    ax.legend(loc='upper left', fontsize=8, ncol=2)
+else:
+    ax.plot([], [], alpha=0.6, linewidth=1.5, color='gray', 
+             label=f'{len(portfolio_tickers_list)} tickers individuales')
+    ax.legend(loc='upper left', fontsize=10)
+
+plt.tight_layout()
+plt.show()
+
+print(f"✅ Gráfica 3A generada: Movimiento individual de {len(portfolio_tickers_list)} tickers")
+print("="*80)
+
+---
+
+# =======================================================
+# 📊 GRÁFICA 3B: EVOLUCIÓN INDIVIDUAL DE CADA TICKER - VALIDACIÓN
+# =======================================================
+
+print("\n" + "="*80)
+print("📊 GRÁFICA 3B: EVOLUCIÓN INDIVIDUAL DE CADA TICKER (Período de Validación)")
+print("📍 MOVIMIENTO REAL DE CADA INVERSIÓN EN EL PERÍODO DE PRUEBA")
+print("="*80)
+
+fig = plt.figure(figsize=(20, 10))
+ax = plt.subplot(1, 1, 1)
+
+# Graficar cada ticker normalizado en validación
+for ticker in validation_tickers:
+    ticker_normalized = prices_validation[ticker] / prices_validation[ticker].iloc[0]
+    ticker_weight = adjusted_weights[ticker]
+    
+    ax.plot(prices_validation.index, ticker_normalized, 
+             alpha=0.6, linewidth=1.5, 
+             label=f"{ticker} ({ticker_weight*100:.2f}%)" if len(validation_tickers) <= 15 else '')
+
+ax.axhline(y=1.0, color='gray', linestyle=':', linewidth=1, alpha=0.5)
+ax.set_title('⭐ Evolución Individual de Cada Ticker (Base = 1) - Período de VALIDACIÓN ⭐', 
+              fontsize=14, fontweight='bold', pad=15)
+ax.set_xlabel('Fecha', fontsize=11)
+ax.set_ylabel('Valor Normalizado (Base = 1)', fontsize=11)
+ax.grid(True, alpha=0.3)
+
+if len(validation_tickers) <= 15:
+    ax.legend(loc='upper left', fontsize=8, ncol=2)
+else:
+    ax.plot([], [], alpha=0.6, linewidth=1.5, color='gray', 
+             label=f'{len(validation_tickers)} tickers individuales')
+    ax.legend(loc='upper left', fontsize=10)
+
+plt.tight_layout()
+plt.show()
+
+print(f"✅ Gráfica 3B generada: Movimiento individual de {len(validation_tickers)} tickers en validación")
+print("="*80)
